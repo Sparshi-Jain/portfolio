@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Dashboard - Sales Management Portal</title>
+    <link rel="stylesheet" href="doc.css">
+</head>
+<body>
+    <header>
+        <h1>Sales Management Portal - Document Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="customer-dashboard.html">Dashboard</a></li>
+                <li><a href="add-workorder.html">Add Work Order</a></li>
+                <li><a href="view-workorders.html">View Work Orders</a></li>
+                <li><a href="document-dashboard.html" class="active">Documents</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="controls">
+            <input type="text" id="searchInput" placeholder="Search documents..." />
+            <button id="addDocumentButton">Add Document</button>
+        </section>
+
+        <section class="document-list">
+            <h2>Documents</h2>
+            <table id="documentsTable">
+                <thead>
+                    <tr>
+                        <th>Document ID</th>
+                        <th>Title</th>
+                        <th>Type</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Document rows will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="document-dashboard.js"></script>
+</body>
+</html>

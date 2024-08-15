@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="customer-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Customer Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#work-orders">Work Orders</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#employees">Employees</a></li>
+                <li><a href="#documents">Documents</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="work-orders">
+        <h2>Work Orders</h2>
+        <button onclick="navigateToAddWorkOrder()">Add Work Order</button>
+        <div id="work-order-list"></div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <button onclick="addProject()">Add Project</button>
+        <div id="project-list"></div>
+    </section>
+
+    <section id="employees">
+        <h2>Employees</h2>
+        <button onclick="addEmployee()">Add Employee</button>
+        <div id="employee-list"></div>
+    </section>
+
+    <section id="documents">
+        <h2>Documents</h2>
+        <button onclick="uploadDocument()">Upload Document</button>
+        <div id="document-list"></div>
+    </section>
+
+    <script src="customer-scripts.js"></script>
+</body>
+</html>
+
